@@ -71,7 +71,7 @@
 
 .kartu {
   padding: 1rem;
-  border: 0.5px solid #5053ff;
+  border: 0.5px solid #424249;
   border-radius: 10px;
 }
 
@@ -93,20 +93,34 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .alat-koleksi input,
 .alat-koleksi select {
-  padding: rem 0.75rem;
-  border: 8px solid #c4c4c4;
+  padding: 0.75rem 1rem;
+  border: 1px solid #c4c4c4;
   border-radius: 6px;
   font: inherit;
+  font-size: 1.05rem;
+  background: #f9f9f9;
 }
 
-.alat-koleksi input,
+.alat-koleksi input {
+  flex: 1;
+  min-width: 220px;
+}
+
 .alat-koleksi select {
-  outline: 2px solid #1d4ed8;
+  min-width: 160px;
+  cursor: pointer;
+}
+
+.alat-koleksi input:focus,
+.alat-koleksi select:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.2);
 }
 
 .badge-kategori {
