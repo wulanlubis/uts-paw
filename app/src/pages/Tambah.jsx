@@ -23,14 +23,17 @@ export default function Tambah() {
             setGalat('Judul harus diisi dan minimal 3 karakter.')
             return
         }
+        setGalat('')
 
-        tambah({ ...form, judul: form.judul.trim()})
+        tambah({ ...form, judul: form.judul.trim(), durasi: durasi, kalori: hitungkalori })
         navigate('/koleksi')
     }
 
     return (
       <form className="tambah" onSubmit={simpan} noValidate>
         <h1>Tambah Latihan</h1>
+
+        {galat && <p role="alert">{galat}</p>}
 
         <label htmlFor="judul">Judul</label>
         <input type="text" id="judul" name="judul" value={form.judul} onChange={ubah} />
@@ -50,9 +53,9 @@ export default function Tambah() {
         <input type="number" id="durasi" name="durasi" value={form.durasi} onChange={ubah} />
 
         <label htmlFor="kalori">Kalori</label>
-        <input type="number" id="kalori" name="kalori" value={hitungkalori} onChange={ubah} />
+        <input type="number" id="kalori" name="kalori" value={hitungkalori} readOnly />
 
-        <button type="submit">Tambah</button>
+        <button type="submit">Simpan</button>
     </form>
   )
 }

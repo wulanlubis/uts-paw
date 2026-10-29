@@ -11,5 +11,5 @@ export default function KartuItem({ item }) {
         {kategori} · tanggal {tanggal}
       </p>
     </article>
-  )
+  );
 }
