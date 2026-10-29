@@ -71,7 +71,9 @@ Kelas: RA
 Tema: Jurnal Latihan Olahraga
 Deployment: https://wulanlubis.github.io/uts-paw/
 
-![Tangkapan layar beranda](docs/beranda.png)
+## Tangkapan layar beranda
+<img width="1324" height="767" alt="image" src="https://github.com/user-attachments/assets/ad552cec-4cbc-4d38-8d88-6f8a27e9bf79" />
+
 
 ## Fitur
 
