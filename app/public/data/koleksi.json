@@ -1,16 +1,110 @@
 [
   {
     "id": "1",
-    "judul": "Jogging di Taman",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
-  }
+    "judul": "Jogging di Embung A",
+    "kategori": "Kardio",
+    "tanggal": "03-10-2026",
+    "durasi": 100,
+    "kalori": 857
+  },
 
   {
     "id": "2",
-    "judul": "Contoh item kedua",
-    ""
+    "judul": "Bulu Tangkis",
+    "kategori": "Permainan",
+    "tanggal": "07-10-2026",
+    "durasi": 60,
+    "kalori": 400
+  },
+  
+  {
+    "id": "3",
+    "judul": "Latihan beban",
+    "kategori": "Kekuatan",
+    "tanggal": "10-10-2026",
+    "durasi": 15,
+    "kalori": 76
+  },
+  
+  {
+    "id": "4",
+    "judul": "Yoga",
+    "kategori": "Kelenturan",
+    "tanggal": "15-10-2026",
+    "durasi": 45,
+    "kalori": 138
+  },
+
+    {
+    "id": "5",
+    "judul": "Jalan santai ",
+    "kategori": "Kardio",
+    "tanggal": "25-10-2026",
+    "durasi": 120,
+    "kalori": 515
+  },
+  
+  {
+    "id": "6",
+    "judul": "Futsal",
+    "kategori": "Permainan",
+    "tanggal": "22-10-2026",
+    "durasi": 90,
+    "kalori": 772
+  },  
+
+  {
+    "id": "7",
+    "judul": "Latihan core",
+    "kategori": "Kekuatan",
+    "tanggal": "26-10-2026",
+    "durasi": 35,
+    "kalori": 210
+  },
+  
+  {
+    "id": "8",
+    "judul": "Pilates",
+    "kategori": "Kelenturan",
+    "tanggal": "27-10-2026",
+    "durasi": 60,
+    "kalori": 276
+  },
+
+  {
+    "id": "9",
+    "judul": "Lompat tali",
+    "kategori": "Kardio",
+    "tanggal": "30-10-2026",
+    "durasi": 30,
+    "kalori": 404
+  },
+  
+  {
+    "id": "10",
+    "judul": "Basket",
+    "kategori": "Permainan",
+    "tanggal": "01-11-2026",
+    "durasi": 60,
+    "kalori": 478
+  },
+
+  {
+    "id": "11",
+    "judul": "Squat",
+    "kategori": "Kekuatan",
+    "tanggal": "02-11-2026",
+    "durasi": 45,
+    "kalori": 410
+  },
+  
+  {
+    "id": "12",
+    "judul": "Senam lantai",
+    "kategori": "Kelenturan",
+    "tanggal": "05-11-2026",
+    "durasi": 45,
+    "kalori": 215
   }
+
 ]
