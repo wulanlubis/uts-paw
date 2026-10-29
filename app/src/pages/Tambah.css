@@ -4,10 +4,10 @@
   gap: 0.5rem;
   max-width: 480px;
   padding: 1.5rem;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #1d006e;
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);
 }
 
 .formulir h1{
@@ -24,7 +24,7 @@
 .formulir input,
 .formulir select {
   padding: 0.5rem 0.75rem;
-  border: 1px solid #c4c4c4;
+  border: 1px solid #1d006e;
   border-radius: 6px;
   font: inherit;
   transition: border-color 0.2s box-shadow 0.2s;
@@ -32,7 +32,7 @@
 
 .formulir input:hover,
 .formulir select:hover {
-  border-color: #8b949e;
+  border-color: #000000;
 }
 
 .formulir input:focus,
@@ -49,10 +49,10 @@
 
 .formulir [role='alert'] {
   margin: 0;
-  color: #5b0b5e;
+  color: #000000;
   font-size: 0.9rem;
   padding: 0.25rem 0.5rem;
-  border-left: 4px solid #5b0b5e;
+  border-left: 4px solid #0b0c5e;
   border-radius: 4px;
   background: #f9e6f7;
 

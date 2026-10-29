@@ -9,6 +9,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  background: #70a9ff96;
+  color: #000000;
+  text-decoration: none;
 }
 
 .menu {
@@ -21,7 +24,7 @@
 }
 
 .menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;;
 }
 
 .isi {
@@ -63,17 +66,17 @@
 .daftar-kartu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .kartu {
   padding: 1rem;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
+  border: 0.5px solid #5053ff;
+  border-radius: 10px;
 }
 
 .kartu:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .kartu h3 {
@@ -83,7 +86,7 @@
 
 .kartu p {
   margin: 0;
-  color: #57606a;
+  color: #054083;
 }
 
 .alat-koleksi {
@@ -95,8 +98,8 @@
 
 .alat-koleksi input,
 .alat-koleksi select {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #c4c4c4;
+  padding: rem 0.75rem;
+  border: 8px solid #c4c4c4;
   border-radius: 6px;
   font: inherit;
 }
@@ -110,7 +113,7 @@
   display: inline-block;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
-  background: #1f2328;
+  background: #10069c;
   color: #fff;
   font-size: 0.85rem;
 }
@@ -121,7 +124,7 @@
 }
 
 #kerangka utama {
-  background: #f9fafb;
+  background: #3d5e80;
 }
 
 #konten-utama {
