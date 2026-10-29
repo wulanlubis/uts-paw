@@ -1,3 +1,3 @@
 export default function BadgeKategori({ kategori }) {
-    return <span className="badge">{kategori}</span>
+    return <span className="badge-kategori">{kategori}</span>
 }
