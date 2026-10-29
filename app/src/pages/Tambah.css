@@ -3,11 +3,22 @@
   flex-direction: column;
   gap: 0.5rem;
   max-width: 480px;
+  padding: 1.5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.formulir h1{
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
 }
 
 .formulir label {
   margin-top: 0.75rem;
   font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .formulir input,
@@ -16,12 +27,35 @@
   border: 1px solid #c4c4c4;
   border-radius: 6px;
   font: inherit;
+  transition: border-color 0.2s box-shadow 0.2s;
+}
+
+.formulir input:hover,
+.formulir select:hover {
+  border-color: #8b949e;
+}
+
+.formulir input:focus,
+.formulir select:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 2px rgba(31, 35, 40, 0.2);
+}
+
+.formulir input[readonly]{
+    background: #f9f9f9;
+    color: #6b7280;
+    cursor: not-allowed;
 }
 
 .formulir [role='alert'] {
   margin: 0;
   color: #5b0b5e;
   font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  border-left: 4px solid #5b0b5e;
+  border-radius: 4px;
+  background: #f9e6f7;
+
 }
 
 .formulir button {
@@ -33,11 +67,31 @@
   background: #1f2328;
   color: #fff;
   font: inherit;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.2s;
+}
+
+.formulir button:hover {
+  background: #111418;
+}
+
+.formulir-button:focus-visible {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+#form-tambah h1::before {
+    content: '+';
+    color: #1f2328;
 }
 
 @media (max-width: 480px) {
-  .formulir button {
+    .formulir {
+        padding: 1rem;
+    }
+
+.formulir button {
     align-self: stretch;
   }
 }

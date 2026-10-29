@@ -27,7 +27,7 @@ export default function Koleksi() {
         <KotakPencarian nilai={cari} onUbah={setCari} />
         <FilterKategori daftarKategori={daftarKategori} nilai={kategori} onUbah={setKategori} />
       </div>
-      
+
       {tampil.length === 0 ? (
         <p>Tidak ada latihan yang cocok.</p>
         ) : (

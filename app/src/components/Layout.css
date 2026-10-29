@@ -20,6 +20,10 @@
   font-weight: 600;
 }
 
+.menu a:hover {
+  text-decoration: underline;
+}
+
 .isi {
   flex: 1;
   width: 100%;
@@ -68,6 +72,10 @@
   border-radius: 8px;
 }
 
+.kartu:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .kartu h3 {
   margin: 0 0 0.25rem;
   font-size: 1.05rem;
@@ -93,6 +101,36 @@
   font: inherit;
 }
 
+.alat-koleksi input,
+.alat-koleksi select {
+  outline: 2px solid #1d4ed8;
+}
+
+.badge-kategori {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: #1f2328;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.badge-kategori::before {
+  content: '· ';
+  margin-right: 0.25rem;
+}
+
+#kerangka utama {
+  background: #f9fafb;
+}
+
+#konten-utama {
+  min-height: 60vh;
+}
+
+#kaki-halaman {
+  text-align: center;
+}
 @media (max-width: 768px) {
   .kepala {
     flex-direction: column;

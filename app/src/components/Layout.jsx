@@ -11,7 +11,7 @@ const MENU = [
 
 export default function Layout() {
   return (
-    <div className="kerangka">
+    <div className="kerangka" id="kerangka-utama">
       <header className="kepala">
         <strong>Jurnal Latihan Olahraga</strong>
         <nav className="menu">
@@ -22,10 +22,12 @@ export default function Layout() {
           ))}
         </nav>
       </header>
-      <main className="isi">
+      <main className="isi" id="konten-utama">
         <Outlet />
       </main>
-      <footer className="kaki">Ujian Tengah Semester Pengembangan Aplikasi Web</footer>
+      <footer className="kaki" id="kaki-halaman">
+        Ujian Tengah Semester Pengembangan Aplikasi Web
+      </footer>
     </div>
   )
 }

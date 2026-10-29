@@ -30,7 +30,7 @@ export default function Tambah() {
     }
 
     return (
-      <form className="tambah" onSubmit={simpan} noValidate>
+      <form className="formulir" id="form-tambah" onSubmit={simpan} noValidate>
         <h1>Tambah Latihan</h1>
 
         {galat && <p role="alert">{galat}</p>}
