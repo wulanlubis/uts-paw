@@ -52,7 +52,7 @@ export default function Tambah() {
         <label htmlFor="durasi">Durasi (menit)</label>
         <input type="number" id="durasi" name="durasi" value={form.durasi} onChange={ubah} />
 
-        <label htmlFor="kalori">Kalori</label>
+        <label htmlFor="kalori">Kalori Terbakar</label>
         <input type="number" id="kalori" name="kalori" value={hitungkalori} readOnly />
 
         <button type="submit">Simpan</button>
