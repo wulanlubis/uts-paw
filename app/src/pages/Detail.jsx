@@ -32,7 +32,9 @@ export default function Detail() {
         <dd>{item.kategori}</dd>
         <dt>Tanggal</dt>
         <dd>{item.tanggal}</dd>
-        <dt>Kalori</dt>
+        <dt>Durasi (menit)</dt>
+        <dd>{item.durasi}</dd>
+        <dt>Kalori terbakar</dt>
         <dd>{item.kalori}</dd>
       </dl>
       <div className="aksi">
