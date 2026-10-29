@@ -1,24 +1,33 @@
 import { useState } from 'react'
 import useKoleksi from '../hooks/useKoleksi.js';
-import KartuItem from '../components/kartuItem.jsx';
+import KartuItem from '../components/KartuItem.jsx';
 import KotakPencarian from '../components/KotakPencarian.jsx';
+import FilterKategori from '../components/FilterKategori.jsx';
 
 
 export default function Koleksi() {
   const { items, loading, error } = useKoleksi()
   const [cari, setCari] = useState('')
+  const [kategori, setKategori] = useState('Semua')
 
   if (loading) return <p>Memuat data...</p>
   if (error) return <p role="alert">Gagal memuat: {error}</p>
 
-  const tampil = items.filter((item) => item.judul.toLowerCase().includes(cari.toLowerCase()))
+  const daftarKategori = ['Semua', ...new Set(items.map((item) => item.kategori))]
+  const tampil = items.filter(
+    (item) => 
+      item.judul.toLowerCase().includes(cari.toLowerCase())
+      && (kategori === 'Semua' || item.kategori === kategori),
+    )
 
   return (
     <section>
       <h1>Koleksi</h1>
       <div className="kotak-pencarian">
         <KotakPencarian nilai={cari} onUbah={setCari} />
+        <FilterKategori daftarKategori={daftarKategori} nilai={kategori} onUbah={setKategori} />
       </div>
+      
       {tampil.length === 0 ? (
         <p>Tidak ada latihan yang cocok.</p>
         ) : (
